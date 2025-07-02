@@ -22,6 +22,17 @@ go build -o mandelbrot mandelbrot_ascii.go
 The code compiles and runs successfully. Previous compilation errors have been resolved:
 - ✅ Replaced unused "math" import with "strings" package
 - ✅ Fixed string multiplication syntax using `strings.Repeat("=", 50)`
+- ✅ Added file saving functionality with random names, descriptions, and timestamps
+
+### File Saving Features
+- Automatically saves all generated ASCII art to `mandelbrot_gallery.txt`
+- Each entry includes timestamp, randomly generated name, and poetic description
+- Content is appended to preserve previous generations
+- Clean formatting with separators between entries
+
+### TODO
+Ideas about what to do next, new features, experimenting with agentic ai coding...
+- Expose an http service that renders generated art in a web browser
 
 ## Code Architecture
 
