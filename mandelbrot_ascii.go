@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"strings"
 )
 
 // Complex number structure
@@ -101,7 +101,7 @@ func main() {
 	generateMandelbrot(width, height, maxIter, -2.5, 1.0, -1.25, 1.25)
 	
 	// Zoomed views of interesting regions
-	fmt.Println("\n" + "="*50)
+	fmt.Println("\n" + strings.Repeat("=", 50))
 	fmt.Println("=== INTERESTING REGIONS ===")
 	
 	// Seahorse valley
@@ -121,7 +121,7 @@ func main() {
 	generateMandelbrot(width, height, 200, -0.8, -0.7, 0.05, 0.15)
 	
 	// ASCII art legend
-	fmt.Println("\n" + "="*50)
+	fmt.Println("\n" + strings.Repeat("=", 50))
 	fmt.Println("ASCII LEGEND:")
 	fmt.Println("' ' (space) - Quick escape (not in set)")
 	fmt.Println(".:- - Fast escape")
