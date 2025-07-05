@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Development Best Practices
+
+- Always use descriptive variable names
+
 ## Project Overview
 
 This is a Go project that generates ASCII art visualization of the Mandelbrot set. The main program creates various views including a full set view and zoomed regions showing interesting fractal patterns.
@@ -125,4 +129,3 @@ docker-compose down
 2. Creates zoomed views of mathematically interesting regions
 3. Displays high-detail view with increased iterations
 4. Shows ASCII legend explaining character meanings
-
